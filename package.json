@@ -10,7 +10,8 @@
   "description": "Refactor React JS/JSX into clean, type-safe TypeScript",
   "main": "./dist/extension.js",
   "scripts": {
-    "build": "vite build",
+    "vscode:prepublish": "npm run build",
+    "build": "tsc && vite build",
     "test": "vitest run",
     "lint": "eslint src --ext .ts,.tsx",
     "format": "prettier --write src",
