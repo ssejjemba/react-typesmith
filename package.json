@@ -1,0 +1,38 @@
+{
+  "name": "react-typesmith",
+  "version": "0.1.0",
+  "description": "Refactor React JS/JSX into clean, type-safe TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts,.tsx",
+    "format": "prettier --write src",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "refactoring",
+    "ai"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/vscode": "^1.99.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "@typescript-eslint/typescript-estree": "^8.31.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "@vscode/vsce": "^3.3.2",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "jscodeshift": "^17.3.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vitest": "^3.1.2"
+  }
+}
