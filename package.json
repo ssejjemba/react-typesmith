@@ -1,14 +1,32 @@
 {
   "name": "react-typesmith",
   "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
   "description": "Refactor React JS/JSX into clean, type-safe TypeScript",
-  "main": "dist/index.js",
+  "main": "./dist/extension.js",
   "scripts": {
     "build": "vite build",
     "test": "vitest run",
     "lint": "eslint src --ext .ts,.tsx",
     "format": "prettier --write src",
     "dev": "tsc --watch"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "reacttypesmith.inferTypes",
+        "title": "ReactTypeSmith: Infer Types"
+      },
+      {
+        "command": "reacttypesmith.renameVariables",
+        "title": "ReactTypeSmith: Rename Variables"
+      }
+    ]
   },
   "keywords": [
     "react",
